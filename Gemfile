@@ -73,20 +73,7 @@ source 'http://rubygems.org'
 DATAMAPPER = 'git://github.com/datamapper'
 DM_VERSION = '~> 1.0.2'
 
-<<<<<<< HEAD
 group :runtime do # Runtime dependencies (as in the gemspec)
-=======
-gem 'bcrypt-ruby', '~> 2.1.4'
-gem 'dm-core',     DM_VERSION, SOURCE => "#{DATAMAPPER}/dm-core#{REPO_POSTFIX}"
-gem 'fastercsv',   '~> 1.5.4'
-gem 'json',        '~> 1.4.6'
-gem 'stringex',    '~> 1.2.0'
-gem 'uuidtools',   '~> 2.1.2'
-gem 'ruby-ip',   '~> 0.9.0', :require => 'ip'
-<<<<<<< HEAD
->>>>>>> 9b77560... using ruby-ip
-=======
->>>>>>> 9b77560... using ruby-ip
 
   if ENV['EXTLIB']
     gem 'extlib',        '~> 0.9.15', :git => "#{DATAMAPPER}/extlib.git"
@@ -99,6 +86,7 @@ gem 'ruby-ip',   '~> 0.9.0', :require => 'ip'
   gem 'json_pure',       '~> 1.4.3'
   gem 'uuidtools',       '~> 2.1.1'
   gem 'stringex',        '~> 1.1.0'
+  gem 'ruby-ip',         '~> 0.9.0'
 
 end
 

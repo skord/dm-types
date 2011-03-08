@@ -1,14 +1,15 @@
-require 'ipaddr'
+require 'ip'
 require 'dm-core'
 
 module DataMapper
   class Property
     class IPAddress < String
 
-      length 39
+      # Way too much, but without a lot of legwork, knowing what's right is a PITA.
+      length 128
 
       def primitive?(value)
-        value.kind_of?(IPAddr)
+        value.kind_of?(IP)
       end
 
       def valid?(value, negated = false)
@@ -20,9 +21,9 @@ module DataMapper
           nil
         elsif value.is_a?(::String)
           unless value.empty?
-            IPAddr.new(value)
+            IP.new(value)
           else
-            IPAddr.new("0.0.0.0")
+            IP.new("0.0.0.0")
           end
         else
           raise ArgumentError.new("+value+ must be nil or a String")

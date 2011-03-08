@@ -15,6 +15,7 @@ gem 'fastercsv',   '~> 1.5.4'
 gem 'json',        '~> 1.4.6'
 gem 'stringex',    '~> 1.2.0'
 gem 'uuidtools',   '~> 2.1.2'
+gem 'ruby-ip',   '~> 0.9.0', :require => 'ip'
 
 group :development do
 

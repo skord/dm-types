@@ -83,6 +83,9 @@ gem 'json',        '~> 1.4.6'
 gem 'stringex',    '~> 1.2.0'
 gem 'uuidtools',   '~> 2.1.2'
 gem 'ruby-ip',   '~> 0.9.0', :require => 'ip'
+<<<<<<< HEAD
+>>>>>>> 9b77560... using ruby-ip
+=======
 >>>>>>> 9b77560... using ruby-ip
 
   if ENV['EXTLIB']

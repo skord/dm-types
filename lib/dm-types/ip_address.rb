@@ -5,7 +5,13 @@ module DataMapper
   class Property
     class IPAddress < String
 <<<<<<< HEAD
+<<<<<<< HEAD
       length 39
+=======
+
+      # Way too much, but without a lot of legwork, knowing what's right is a PITA.
+      length 128
+>>>>>>> 9b77560... using ruby-ip
 =======
 
       # Way too much, but without a lot of legwork, knowing what's right is a PITA.
